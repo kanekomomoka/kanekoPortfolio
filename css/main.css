@@ -75,3 +75,21 @@
   font-size: 24px;
   line-height: 2rem;
 }
+
+/* 画像一覧 */
+.wrap01 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.demo01 {
+  margin: 0 auto;
+}
+
+.imglist {
+  width: 200px;
+}
+
+.imglist img {
+  width: 100%;
+}
