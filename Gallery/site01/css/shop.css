@@ -1,0 +1,1044 @@
+@charset "UTF-8";
+/* ナビお気に入りボタン */
+.icon {
+  padding: 0;
+  margin: 0;
+  fill: rgb(41, 41, 41);
+
+border-radius: 100%;
+border: solid  rgb(41, 41, 41);
+
+padding: 4% 2% 2% 2%;
+margin-top: 23%;
+}
+
+/* Medium */
+@font-face {
+  font-family: "font";
+  src: url("../Gothic/Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font";
+  src: url("../Gothic/Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+p,
+.news-item-content,
+.news-item {
+  font-family: "font", sans-serif;
+}
+h1,
+h2,
+span {
+  font-family: "font", sans-serif;
+  font-weight: bold;
+}
+li {
+  font-family: "font", sans-serif;
+}
+
+.gallery-items {
+  display: flex;
+  text-align: center;
+}
+.gallery-item {
+  width: 100%;
+  margin: 20px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f4eb;
+  color: #333;
+
+  background-image: url(../images/shop/haikei.png);
+  background-attachment: fixed;
+  background-size: cover;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+/*ホバーすると下線*/
+.c-header__list-item01 {
+  list-style: none;
+  text-decoration: none;
+}
+.c-header__list-link01 {
+  font-weight: bold;
+  font-size: 1.7vw;
+  color: #000; 
+  display: block;
+  margin-right: 30px;
+  text-decoration: none;
+  padding: 10px 0px 7px 0px;
+
+  border-bottom: solid 4px #f99292;
+}
+.c-header__list-link:hover
+{
+  background-color: #f9929234;
+}
+
+.c-header__list-link01:hover
+{
+  background-color: #f9929234;
+}
+
+
+/* ヘッダー*/
+.c-header {
+  align-items: center;
+  background-color: #fff4e0; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+
+  z-index: 30;
+  Position: sticky; top: 0
+}
+
+.c-header__logo {
+  color: #000; 
+  min-width: 80px; 
+  text-decoration: none;
+}
+
+.c-header__list {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.c-header__list-item {
+  list-style: none;
+  text-decoration: none;
+}
+
+.c-header__list-link {
+  font-weight: bold;
+  font-size: 1.7vw;
+  color: #000; 
+  display: block;
+  margin-right: 30px;
+  text-decoration: none;
+  padding: 10px 0px;/
+}
+
+
+
+
+
+
+.c-hamburger-menu__input {
+  display: none;
+}
+
+.c-hamburger-menu__bg {
+  cursor: pointer;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#hamburger:checked ~ .c-hamburger-menu__bg {
+  display: block;
+}
+
+.c-hamburger-menu__button {
+  display: none;
+}
+
+
+.c-hamburger-menu__button-mark {
+  background-color: #000; /* カスタマイズしてください */
+  display: block;
+  height: 1px; /* カスタマイズしてください */
+  transition: 0.3s; /* カスタマイズしてください */
+  width: 20px; /* カスタマイズしてください */
+}
+
+
+.logo_main {
+  width: 20vw;
+}
+
+
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+/*メインビジュアル*/
+.main{
+    padding-top: 1%;
+    width: 100%;
+    display: flex;
+}
+.main01{
+  margin-left: 5%;
+    width: 7%;
+    padding-bottom: 10%;
+}
+.main03{
+    width: 80%;
+}
+
+.main02{
+    display: none;
+}
+
+
+
+/*ボタン*/
+
+.hover-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  margin-left: 80%;
+}
+.text {
+  color: rgb(83, 83, 83); /* 画像で見られるテキストの色 */
+  margin-left: -15px; /* 円とテキストの間隔 */
+  position: relative;
+  z-index: 20;
+  font-size: 1.5vw;
+}
+
+.circle {
+  background-color: #f99292;
+  border-radius: 50%;
+  width: 50px; /* 初期サイズ */
+  height: 50px; /* 初期サイズ */
+  position: absolute;
+  top: 50%;
+  left: -24px; /* 必要に応じて調整 */
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-in-out; /* ホバー時の円の拡大効果 */
+  z-index: 10;
+}
+
+.hover-button:hover .circle {
+  transform: translate(-50%, -50%) scale(1.5); /* ホバー時に円を拡大 */
+}
+
+/*テキストスクロール*/
+.scroll {
+margin-top: 3%;
+    width      : 100%;
+    font-size  : 8vw;
+    line-height: 1.5em;
+    text-align : center;
+    color      : #FFF4E0;
+    overflow   : hidden;
+    text-shadow: 1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000;
+  }
+  .scroll span{
+    display     : inline-block;
+    padding-left: 0%;
+    white-space : nowrap;
+    line-height : 1em;
+    animation   : scrollAnime 60s linear infinite;
+  }
+  @keyframes  scrollAnime{
+      0% { transform: translateX(0)}
+    100% { transform: translateX(-100%)}
+  }
+
+
+/*お店の紹介*/
+.shop_main01{
+    display: flex;
+ padding-top: 3vw;
+}
+.shop01{
+    width: 40%;
+padding-left: 10vw;
+}  
+.shop_text{
+    padding:2vw 10vw 0vw 5vw;
+}
+.shop_text01{
+    color: #FEC87D;
+font-size: 3vw;
+}
+.shop_text02{
+    font-size: 1.5vw;
+    margin: 2% 0;
+}
+.shop_text03{
+    font-size: 1vw;
+}
+/*お店の紹介02*/
+.shop_main02{
+
+    width: 100%;
+    display: flex;
+ padding-top: 15vw;
+}
+.shop02{
+    width: 55%;
+padding-left: 5vw;
+}  
+.shop02_text{
+    padding:12vw 2vw 0vw 5vw;
+}
+.shop02_text01{
+    color: #FEC87D;
+font-size: 3vw;
+}
+.shop02_text02{
+    padding-top: 2vw;
+    font-size: 1.2vw;
+}
+/*お店の紹介*/
+.shop_main03{
+  position: relative;
+  display: flex;
+padding-top: 15vw;
+}
+.shop03{
+  width: 70%;
+}  
+.shop03_text{
+  position: absolute;
+  padding: 27vw 10vw 0vw 37vw;
+}
+.shop03_text01{
+  color: #FEC87D;
+font-size: 4vw;
+}
+.shop03_text02{
+  font-size: 1.2vw;
+  padding-top: 1vw;
+}
+
+  
+
+
+
+/*アクセス情報*/
+.access {
+  display: flex;
+  margin-top: 10vw;
+}
+.map-container {
+  width: 80%;
+  text-align: center;
+}
+.map {
+  border-radius: 20px;
+  margin-left: 3zw;
+
+  box-shadow: -30px 30px #ebdbbe;
+
+  width: 65vw;
+  height: 40vw;
+}
+.access_img {
+  margin-left: 10vw;
+  width: 6vw;
+}
+
+/*アクセス情報 テキスト*/
+.access_text {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5vw;
+  margin-left: 20vw;
+  line-height: 1.5em;
+}
+
+.access_text02 {
+  margin-right: 3vw;
+  line-height: 2em;
+}
+.access_text03 {
+  line-height: 2em;
+}
+
+.endtext {
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 2em;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  color: #646464;
+}
+
+/*ぶろぐ*/
+.blog_img {
+  text-align: center;
+}
+.blog01 {
+  width: 100%;
+}
+
+.blog_line {
+  display: flex;
+
+  text-align: center;
+  margin-bottom: 5vw;
+
+  width: 100%;
+}
+.img01 {
+  width: 9%;
+  margin-bottom: 2vw;
+}
+.blog_img01 {
+  width: 20vw;
+}
+.blog_text01,
+.blog_text02,
+.blog_text03 {
+  color: #f99292;
+  font-size: 1.5vw;
+}
+
+.sns {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.social-media {
+  width: 30%;
+}
+/* フッター*/
+footer {
+  background-color: #ebdbbe;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+/*フェードイン*/
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fadeUp.is-animated {
+  animation-name: fadeUp;
+  animation-duration: 3.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*ホバーすると下線*/
+
+
+
+.news-item-title {
+  position: relative;
+  display: inline-block;
+}
+.news-item-title::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #f99292;
+  transition: 0.3s;
+}
+.news-item-title:hover::after {
+  width: 100%;
+}
+
+
+
+.menu_title {
+  position: relative;
+  display: inline-block;
+}
+.menu_title::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #f99292;
+  transition: 0.3s;
+}
+.menu_title:hover::after {
+  width: 100%;
+}
+
+.blog_text01 {
+  position: relative;
+  display: inline-block;
+}
+.blog_text01::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #f99292;
+  transition: 0.3s;
+}
+.blog_text01:hover::after {
+  width: 100%;
+}
+
+.menu_text_sp {
+  display: none !important;
+}
+.shop_img_sp {
+  display: none !important;
+}
+.access_img_sp {
+  display: none !important;
+}
+.shop03_text02_sp {
+  display: none !important;
+}
+
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  /* タブレットサイズ／スマホ横画面サイズ：480px～768px */
+
+  /*ヘッダー*/
+.c-header {
+  align-items: center;
+  background-color: #fff4e0; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+
+  z-index: 30;
+  Position: sticky; top: 0
+}
+
+.c-header__logo {
+  color: #000; 
+  min-width: 80px; 
+  text-decoration: none;
+}
+
+.c-header__list {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.c-header__list-item {
+  list-style: none;
+  text-decoration: none;
+}
+
+.c-header__list-link {
+  font-weight: bold;
+  font-size: 1.7vw;
+  color: #000; 
+  display: block;
+  margin-right: 30px;
+  text-decoration: none;
+  padding: 10px 0px;/
+}
+
+  /*メインビジュアル*/
+
+  .main {
+    padding-top: 1%; 
+    margin: 0 0%;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+.main01 {
+  display: none !important;
+}
+.main02{
+  display: block !important;
+  width: 40vw;
+  margin:0 auto;
+}
+.main03 {
+  margin: 0 auto;
+}
+  /*お店の紹介*/
+  .shop_main01 {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3vw;
+}
+.shop01 {
+  width: 40%;
+}
+.shop01 {
+  width: 60%;
+  margin: 0 auto;
+}
+.shop_text {
+  padding: 2vw 20vw 0vw 20vw;
+}
+.shop_text01 {
+  color: #FEC87D;
+  font-size: 5vw;
+}
+.shop_text02 {
+  font-size: 2.5vw;
+  margin: 2% 0;
+}
+.shop_text03 {
+  font-size: 1.7vw;
+}
+  /*お店の紹介02*/
+  .shop_main02 {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding-top: 15vw;
+}
+.shop02 {
+  margin: 0 auto;
+  width: 80%;
+  order: -2;
+  padding-left: 0vw;
+}
+
+.shop02_text {
+  text-align: center;
+  padding: 0vw 24vw 0vw 24vw;
+}
+.shop02_text01 {
+  color: #FEC87D;
+  font-size: 5vw;
+}
+.shop02_text02 {
+  padding-top: 2vw;
+  font-size: 1.7vw;
+}
+
+
+  /*お店の紹介03*/
+  .shop03_text {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+}
+  .shop03 {
+    margin: 0 20% 0 0%;
+    width: 100%;
+}
+.shop03_text01 {
+  color: #FEC87D;
+  font-size: 5vw;
+  padding: 44% 0% 15% 54%;
+}
+.shop03_text02 {
+  display: none !important;
+}
+.shop03_text02_sp{
+  display: block !important;
+  width: 100%;
+  margin:0 auto;
+  text-align: center;
+  padding: 0% 0% 0% 0%;
+}
+
+  /*access情報*/
+  .access {
+    display: flex;
+    margin-top: 20vw;
+}
+  .access_text {
+    display: block;
+    margin-top: 5vw;
+    margin-left: 20vw;
+    line-height: 1.5em;
+  }
+  .endtext {
+    text-align: center;
+    font-size: 2vw;
+    line-height: 2em;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    color: #646464;
+  }
+  /*ぶろぐ*/
+  .blog_img01 {
+    width: 30vw;
+  }
+  .blog_text01,
+  .blog_text02,
+  .blog_text03 {
+    color: #f99292;
+    font-size: 2vw;
+  }
+}
+ /*タブレット/スマホサイズの設定：ここまで*/
+
+@media screen and (max-width: 679px) {
+  /* スマホサイズ：667px以下 */
+  /*ヘッダー*/
+  .c-hamburger-menu__list {
+    background-color: #fff4e0; /* カスタマイズしてください */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    padding: 2rem; /* カスタマイズしてください */
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 0.3s; /* カスタマイズしてください */
+    top: 100%;
+    width: 100%;
+  }
+
+  #hamburger:checked ~ .c-hamburger-menu__list {
+    transform: translateX(0%);
+    transition: 0.3s;
+  }
+  .c-hamburger-menu__button {
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* カスタマイズしてください */
+    height: 32px; /* カスタマイズしてください */
+    justify-content: center;
+    width: 32px; /* カスタマイズしてください */
+  }
+
+
+.c-hamburger-menu__button-mark {
+  background-color: #000; /* カスタマイズしてください */
+  display: block;
+  height: 1px; /* カスタマイズしてください */
+  transition: 0.3s; /* カスタマイズしてください */
+  width: 20px; /* カスタマイズしてください */
+}
+  #hamburger:checked
+  ~ .c-hamburger-menu__button
+  .c-hamburger-menu__button-mark:nth-of-type(1) {
+  transform: translate(2px, 1px) rotate(45deg); /* カスタマイズしてください */
+  transform-origin: 0%; /* カスタマイズしてください */
+}
+#hamburger:checked
+  ~ .c-hamburger-menu__button
+  .c-hamburger-menu__button-mark:nth-of-type(2) {
+  opacity: 0;
+}
+#hamburger:checked
+  ~ .c-hamburger-menu__button
+  .c-hamburger-menu__button-mark:nth-of-type(3) {
+  transform: translate(2px, 3px) rotate(-45deg); /* カスタマイズしてください */
+  transform-origin: 0%; /* カスタマイズしてください */
+}
+
+  .c-header__list-link {
+    font-weight: bold;
+    font-size: 4.2vw;
+    color: #000;
+    display: block;
+    margin-right: 30px;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+  .c-hamburger-menu__button-mark {
+    display: block;
+    height: 2px;
+    transition: 0.3s;
+    width: 25px;
+}
+  .hero {
+    text-align: center;
+    z-index: 0;
+    padding-top: 0%;
+    width: 100%;
+}
+.main_img {
+  margin-top: 0vw;
+  width: 100%;
+}
+.logo_main {
+  width: 35vw;
+}
+  
+
+  /*メインビジュアル*/
+
+  .main {
+    padding-top: 1%; 
+    margin: 0 0%;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+.main01 {
+  display: none !important;
+}
+.main02{
+  display: block !important;
+  width: 50vw;
+  margin:0 auto;
+}
+.main03 {
+  margin: 0 auto;
+  width: 100%;
+}
+  /*お店の紹介*/
+  .shop_main01 {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3vw;
+}
+.shop01 {
+  width: 80%;
+}
+.shop01 {
+  width: 60%;
+  margin: 0 auto;
+}
+.shop_text {
+  padding: 2vw 20vw 0vw 20vw;
+}
+.shop_text01 {
+  color: #FEC87D;
+  font-size: 7vw;
+}
+.shop_text02 {
+  font-size: 3.5vw;
+  margin: 2% 0;
+}
+.shop_text03 {
+  font-size: 2.5vw;
+}
+
+  /*お店の紹介02*/
+  .shop_main02 {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding-top: 15vw;
+}
+.shop02 {
+  margin: 0 auto;
+  width: 80%;
+  order: -2;
+  padding-left: 0vw;
+}
+
+.shop02_text {
+  text-align: center;
+  padding: 0vw 24vw 0vw 24vw;
+}
+.shop02_text01 {
+  color: #FEC87D;
+  font-size: 7vw;
+}
+.shop02_text02 {
+  padding-top: 2vw;
+  font-size: 2.5vw;
+}
+
+
+  /*お店の紹介03*/
+  .shop03_text {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+}
+  .shop03 {
+    margin: 0 20% 0 0%;
+    width: 100%;
+}
+.shop03_text01 {
+  color: #FEC87D;
+  font-size: 5vw;
+  padding: 44% 0% 15% 54%;
+}
+.shop03_text02 {
+  display: none !important;
+}
+.shop03_text02_sp{
+  display: block !important;
+  width: 100%;
+  margin:0 auto;
+  text-align: center;
+  font-size: 2.5vw;
+  padding: 5% 0% 7% 0%;
+}
+
+  /*access情報*/
+  .map {
+    /* border-radius: 20px; */
+    margin-left: 3zw;
+    /* box-shadow: -30px 30px #ebdbbe; */
+    width: 125%;
+    height: 60vw;
+  }
+  .access {
+    display: inline;
+    margin-top: 10vw;
+  }
+  .access_img {
+    display: none !important;
+  }
+  .access_img_sp {
+    display: block !important;
+    width: 30vw;
+    margin: auto;
+  }
+  .access_text {
+    display: block;
+  }
+  .endtext {
+    text-align: center;
+    font-size: 2vw;
+    line-height: 2em;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    color: #646464;
+  }
+  .access_text02 {
+    text-align: center;
+    font-size: 2.6vw;
+    margin-right: 0vw;
+    line-height: 2em;
+  }
+
+  .access_text {
+    display: inline;
+  }
+  .access_text03 {
+    padding: 0 20vw;
+    text-align: center;
+    font-size: 2.6vw;
+    margin-right: 0vw;
+    line-height: 2em;
+  }
+
+  /*ぶろぐ*/
+  .img01 {
+    width: 19%;
+    margin-bottom: 2vw;
+  }
+  .blog_line {
+    display: block;
+    text-align: center;
+    margin-bottom: 5vw;
+    width: 100%;
+  }
+
+  .blog_img01 {
+    width: 70vw;
+  }
+  .blog_text01,
+  .blog_text02,
+  .blog_text03 {
+    color: #f99292;
+    font-size: 2vw;
+  }
+  .endtext {
+    font-size: 3vw;
+    padding: 31px 5vw;
+    line-height: 2em;
+    /* margin-top: 4vw; */
+    /* margin-bottom: 5vw; */
+    color: #646464;
+  }
+  .blog_text01 {
+    position: relative;
+    display: block;
+  }
+  .blog_text01,
+  .blog_text02,
+  .blog_text03 {
+    color: #f99292;
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .blog_text01 {
+    position: relative;
+    display: inline-block;
+  }
+  .blog_text01::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #f99292;
+    transition: 0.3s;
+  }
+  .blog_text01:hover::after {
+    width: 90%;
+  }
+  .social-media {
+    width: 70%;
+  }
+  .c-header__list-link01 {
+    font-weight: bold;
+    font-size: 4.5vw;
+    color: #000;
+    display: block;
+    margin-right: 30px;
+    text-decoration: none;
+    padding: 10px 0px 7px 0px;
+    border-bottom: solid 4px #f99292;
+}
+}

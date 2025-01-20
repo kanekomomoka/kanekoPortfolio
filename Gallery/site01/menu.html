@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[公式]商品一覧/ 長野県飯田市にある給食を食べられる食堂 おいしい給食亭</title>
+
+
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="icon" href="images/top/Logo01.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダー-->
+    <header class="c-header c-hamburger-menu">
+      <!-- 追記 クラスを追記 -->
+      <a href="index.php" class="c-header__logo">
+        <img class="logo_main" src="images/top/Logo.png" alt="なつかし給食亭" />
+      </a>
+      <input
+        type="checkbox"
+        name="hamburger"
+        id="hamburger"
+        class="c-hamburger-menu__input"
+      /><!-- 追記 idはlabelのforと同じにする -->
+      <label for="hamburger" class="c-hamburger-menu__bg"></label
+      ><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+      <ul class="c-header__list c-hamburger-menu__list">
+        <!-- 追記 クラスを追記 -->
+        <li class="c-header__list-item">
+          <a href="index.php" class="c-header__list-link">トップ</a>
+        </li>
+        <li class="c-header__list-item01">
+          <a href="menu.php" class="c-header__list-link01">こんだて</a>
+        </li>
+        <li class="c-header__list-item">
+          <a href="news.php" class="c-header__list-link">お知らせ</a>
+        </li>
+        <li class="c-header__list-item">
+          <a href="shop.php" class="c-header__list-link">お店の紹介</a>
+        </li>
+        <li class="c-header__list-item">
+          <a href="blog.php" class="c-header__list-link">コラム</a>
+        </li>
+        <li class="c-header__list-item">
+        <a href=".php" class="c-header__list-link">
+        <span onclick="changeColor()">
+      <svg style="display: none">
+        <symbol id="icon" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span></a>
+</li>
+      </ul>
+      <label for="hamburger" class="c-hamburger-menu__button">
+        <!-- 追記 ハンバーガーメニューのボタン -->
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+      </label>
+    </header>
+
+    <!-- フェードイン-->
+
+    <!-- メインビジュアルー-->
+    <main>
+        <div class="main">
+        <img class="main_img01" src="images/menu/menu_title.png" />
+        <img class="main_img02" src="images/menu/main.png" />
+        </div>
+    </main>
+
+
+
+      <!-- 今日の献立 -->
+<section class="now">
+    
+
+    <div class="now_img">
+    <img class="now_img01" src="images/menu/menu_now.png"　alt="今日の献立" />
+    <img class="now_img01_SP" src="images/menu/no.png" alt="今日の献立"/>
+    </div>
+
+<div class="now_title">
+    <img class="now_img02" src="images/menu/menu_naw02.png"  alt="魚フライセット"/>
+    <div class="now_text">
+    <h1 class="now_text01">魚フライセット</h1>
+    <p class="now_text02">￥１,５００<span class="small">(税込)</span></p>
+    <p class="now_text03">魚フライ・春雨スープ・ベーコンの炒め物<br>
+        パン(イチゴのジャム付き)の豪華給食セット！</p>
+
+         <!-- ボタン　-->
+      <button class="hover-button">
+        <a href="menu_more.php"><span class="text">view more &gt;</span></a>
+        <span class="circle"></span>
+    </button>
+</div>
+</div>
+</section>
+
+
+<!-- タブメニュー　-->
+<div class="fadeAnimation__item js-fadeAnimation fadeUp delay04s">
+<section>
+    <div class="tab-wrap">
+
+    
+
+        <!-- すべて　-->
+        <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">すべて</label>
+        <div class="tab-content">
+
+            <div class="grid" >
+
+            <div class="item01">
+    <img class="menu_img" src="images/menu/food/all/all01.png" alt="魚フライセット">
+    <h1 class="menu_title">魚フライセット/
+    
+<!-- お気に入りボタン -->
+<span id="box1" onclick="changeColor('box1', '魚フライセット1', 1500)">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+
+
+</h1>
+
+    <p class="price">￥１,５００<span class="small">(税込)</span></p>
+    <p class="menu_text">魚フライ・春雨スープ・ベーコンの炒め物<br>
+        パン(イチゴのジャム付き)の豪華給食セット！</p>
+</div>
+
+<!-- ちらし寿司 -->
+              <div class="item02">
+                <img class="menu_img" src="images/menu/food/all/all02.png"　alt="ちらし寿司セット">
+                <h1 class="menu_title">ちらし寿司セット/
+
+                <!-- お気に入りボタン -->
+<span  id="box2" onclick="changeColor('box2')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+                </h1>
+                <p class="price">￥１,１００<span class="small">(税込)</span></p>
+                <p class="menu_text">ちらし寿司・イワシのハンバーグ・お吸い物<br>フルーツみつ豆牛乳のセットメニュー。<br>おなか一杯になりたい人におすすめ！</p>
+              </div>
+
+  <!-- スープセット -->             
+              <div class="item03">
+                <img class="menu_img" src="images/menu/food/all/all03.png"　alt="スープセット">
+                <h1 class="menu_title">スープセット/
+                  
+                                <!-- お気に入りボタン -->
+<span  id="box3" onclick="changeColor('box3')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+                </h1>
+                <p class="price">￥９９０<span class="small">(税込)</span></p>
+                <p class="menu_text">秋の野菜スープ・たくあん・白米・白身フライ
+                  <br>ゆで卵(塩付き)の優しい味の給食セット</p>
+              </div>
+              
+
+              <div class="item04">
+                <img class="menu_img" src="images/menu/food/all/all04.png"　alt="コロッケパンセット">
+                <h1 class="menu_title">コロッケパンセット/
+                  <!-- お気に入りボタン -->
+<span id="box4" onclick="changeColor('box4')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+                </h1>
+                <p class="price">￥１,０００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    コロッケ・キャベツの漬物・パン・スープ<br>
+                    パンにコロッケを挟んで食べのがオススメ！</p>
+              </div>
+              
+
+
+              <div class="item05">
+                <img class="menu_img" src="images/menu/food/all/all05.png"　alt="チリコンカンセット">
+                <h1 class="menu_title">チリコンカンセット/
+                  <!-- お気に入りボタン -->
+<span id="box5" onclick="changeColor('box5')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+
+                </h1>
+                <p class="price">￥１,３００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    アメリカで定番の豚肉と野菜を炒めたチリコンカン、<br>
+                    給食セットでは優しい味で食べられる</p>
+              </div>
+              
+
+              <div class="item06">
+                <img class="menu_img" src="images/menu/food/all/all06.png"　alt="秋限定の栗ご飯">
+                <h1 class="menu_title">秋限定の栗ご飯/
+                <span id="box6" onclick="changeColor('box6')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+                </h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    秋限定の栗ご飯。<br>
+                    栗の甘さとほかほかのごはんが相性抜群！</p>
+              </div>
+              
+
+
+              <div class="item07">
+                <img class="menu_img" src="images/menu/food/all/all07.png"　alt="チャーハンセット">
+                <h1 class="menu_title">チャーハンセット/
+
+                <span id="box7" onclick="changeColor('box7')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+                </h1>
+                <p class="price">￥１,２００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    チャーハン・アメリカンドックが含まれた<br>
+                    アメリカンなセットはいかがですか？</p>
+              </div>
+
+
+
+              <div class="item08">
+                <img class="menu_img" src="images/menu/food/all/all08.png" alt="冷やし中華セット">
+                <h1 class="menu_title">冷やし中華セット/
+                                    <!-- お気に入りボタン -->
+<span id="box8" onclick="changeColor('box8')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+                </h1>
+                <p class="price">￥１,３５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    夏といえば冷やし中華！<br>
+                    スイカと揚げ春巻き付き！</p>
+              </div> 
+
+
+
+              <div class="item09">
+                <img class="menu_img" src="images/menu/food/all/all09.png" alt="きな粉揚げパン">
+                <h1 class="menu_title">きな粉揚げパン/
+                                    <!-- お気に入りボタン -->
+<span id="box9" onclick="changeColor('box9')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+                </h1>
+                <p class="price">￥５００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    懐かしのきな粉揚げパン<br>
+                    サクサクのパンに甘いきな粉がたまらない</p>
+              </div> 
+
+
+
+              <div class="item10">
+                <img class="menu_img" src="images/menu/food/all/all10.png" alt="大人気！揚げ餃子">
+                <h1 class="menu_title">大人気！揚げ餃子/
+                                    <!-- お気に入りボタン -->
+<span id="box10" onclick="changeColor('box10')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+                </h1>
+                <p class="price">￥７５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    大人気の揚げ餃子。<br>
+                    サックサクの食感がたまらない！</p>
+              </div> 
+
+
+
+              <div class="item11">
+                <img class="menu_img" src="images/menu/food/all/all11.png" alt="サバの味噌煮">
+                <h1 class="menu_title">サバの味噌煮/
+                  <!-- お気に入りボタン -->
+                  <span id="box11" onclick="changeColor('box11')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+                </h1>
+                <p class="price">￥６００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    優しい味のサバの味噌煮<br>
+                    ご飯との相性抜群！</p>
+              </div> 
+
+
+
+              <div class="item12">
+                <img class="menu_img" src="images/menu/food/all/all12.png" alt="具だくさんの豚汁">
+                <h1 class="menu_title">具だくさんの豚汁/
+                  <!-- お気に入りボタン -->
+                  <span id="box12" onclick="changeColor('box12')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+
+                </h1>
+                <p class="price">￥３５０<span class="small">(税込)</span></p>
+                <p class="menu_text">暖かい豚汁が体にしみる
+                </p>
+              </div> 
+
+
+
+              <div class="item13">
+                <img class="menu_img" src="images/menu/food/all/all13.png" alt="お米のガトーショコラ">
+                <h1 class="menu_title">お米のガトーショコラ/
+                  <!-- お気に入りボタン -->
+                  <span id="box13" onclick="changeColor('box13')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+                </h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    グルテンフリーで体に優しい<br>
+                    お米のガトーショコラ
+                    </p>
+              </div> 
+
+
+              <div class="item14">
+                <img class="menu_img" src="images/menu/food/all/all14.png" alt="夏のスイカゼリー子">
+                <h1 class="menu_title">夏のスイカゼリー/
+
+                                  <!-- お気に入りボタン -->
+<span id="box14" onclick="changeColor('box14')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+                </h1>
+                <p class="price">￥１５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    夏の給食に出される
+                    スイカゼリー</p>
+              </div> 
+
+
+
+              <div class="item15">
+                <img class="menu_img" src="images/menu/food/all/all15.png" alt="七夕のデザート">
+                <h1 class="menu_title">七夕のデザート/
+                                    <!-- お気に入りボタン -->
+<span id="box15" onclick="changeColor('box15')">
+      <svg style="display: none">
+        <symbol id="icon-heart" viewBox="0 0 25 25">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </symbol>
+      </svg>
+
+      <svg class="icon-heart" width="30" height="30">
+        <use href="#icon-heart" />
+      </svg>
+</span>
+                </h1>
+                <p class="price">￥３５０<span class="small">(税込)</span></p>
+                <p class="menu_text">七夕の日限定デザートがいつでも食べられる！<br>
+                  懐かしい味におもいでがよみがえる。</p>
+              </div> 
+
+        </div>
+        </div>
+
+        <!-- セット　-->
+        <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">セット</label>
+        <div class="tab-content">
+          <div class="grid">
+
+            <div class="item01">
+                <img class="menu_img" src="images/menu/food/set/set01.png" alt="魚フライセット">
+                <h1 class="menu_title">魚フライセット</h1>
+                <p class="price">￥１,５００<span class="small">(税込)</span></p>
+                <p class="menu_text">魚フライ・春雨スープ・ベーコンの炒め物<br>
+                    パン(イチゴのジャム付き)の豪華給食セット！</p>
+              </div>
+
+              <div class="item02">
+                <img class="menu_img" src="images/menu/food/set/set02.png" alt="ちらし寿司セット">
+                <h1 class="menu_title">ちらし寿司セット</h1>
+                <p class="price">￥１,１００<span class="small">(税込)</span></p>
+                <p class="menu_text">ちらし寿司・イワシのハンバーグ・お吸い物<br>フルーツみつ豆牛乳のセットメニュー。<br>おなか一杯になりたい人におすすめ！</p>
+              </div>
+              
+              <div class="item03">
+                <img class="menu_img" src="images/menu/food/set/set03.png" alt="スープセット">
+                <h1 class="menu_title">スープセット</h1>
+                <p class="price">￥９９０<span class="small">(税込)</span></p>
+                <p class="menu_text">秋の野菜スープ・たくあん・白米・白身フライ
+                  <br>ゆで卵(塩付き)の優しい味の給食セット</p>
+              </div>
+              
+
+              <div class="item04">
+                <img class="menu_img" src="images/menu/food/set/set04.png" alt="コロッケパンセット">
+                <h1 class="menu_title">コロッケパンセット</h1>
+                <p class="price">￥１,０００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    コロッケ・キャベツの漬物・パン・スープ<br>
+                    パンにコロッケを挟んで食べのがオススメ！</p>
+              </div>
+              
+              <div class="item05">
+                <img class="menu_img" src="images/menu/food/set/set05.png" alt="チリコンカンセット">
+                <h1 class="menu_title">チリコンカンセット</h1>
+                <p class="price">￥１,３００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    アメリカで定番の豚肉と野菜を炒めたチリコンカン、<br>
+                    給食セットでは優しい味で食べられる</p>
+              </div>
+              
+              <div class="item06">
+                <img class="menu_img" src="images/menu/food/set/set08.png" alt="冷やし中華セット">
+                <h1 class="menu_title">冷やし中華セット</h1>
+                <p class="price">￥１,３５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  夏といえば冷やし中華！<br>
+                  スイカと揚げ春巻き付き！</p>
+              </div>
+        </div>
+</div>
+        
+
+
+        <!-- おかず　-->        
+        <input id="TAB-03" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-03">おかず</label>
+        <div class="tab-content">
+          <div class="grid">
+
+            <div class="item01">
+                <img class="menu_img" src="images/menu/food/side/side01.png" alt="大人気！揚げ餃子">
+                <h1 class="menu_title">大人気！揚げ餃子</h1>
+                <p class="price">￥７５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    大人気の揚げ餃子。<br>
+                    サックサクの食感がたまらない！</p>
+              </div> 
+
+              <div class="item02">
+                <img class="menu_img" src="images/menu/food/side/side02.png" alt="サバの味噌煮">
+                <h1 class="menu_title">サバの味噌煮</h1>
+                <p class="price">￥６００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                    優しい味のサバの味噌煮<br>
+                    ご飯との相性抜群！</p>
+              </div> 
+              
+              <div class="item03">
+                <img class="menu_img" src="images/menu/food/side/side03.png" alt="具だくさんの豚汁">
+                <h1 class="menu_title">具だくさんの豚汁</h1>
+                <p class="price">￥３５０<span class="small">(税込)</span></p>
+                <p class="menu_text">暖かい豚汁が体にしみる
+                </p>
+              </div>
+              
+        </div>
+</div>
+        <!-- ごはん　-->        
+        <input id="TAB-04" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-04">ごはん</label>
+        <div class="tab-content">
+          <div class="grid">
+
+            <div class="item01">
+                <img class="menu_img" src="images/menu/food/rice/rice01.png" alt="ちらし寿司">
+                <h1 class="menu_title">ちらし寿司</h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">酢飯の上に新鮮な刺身や卵焼き、<br>
+                  野菜を彩りよく盛り付けた、<br>
+                  お祝いや特別な日にぴったりの寿司</p>
+              </div>
+
+              <div class="item02">
+                <img class="menu_img" src="images/menu/food/rice/rice02.png" alt="秋限定の栗ご飯">
+                <h1 class="menu_title">秋限定の栗ご飯</h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  秋限定の栗ご飯。<br>
+                  栗の甘さとほかほかのごはんが相性抜群！</p>
+              </div>
+              
+              <div class="item03">
+                <img class="menu_img" src="images/menu/food/rice/rice03.png" alt="ゆかりご飯">
+                <h1 class="menu_title">ゆかりご飯</h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">ご飯にゆかりを混ぜて炊き込んだ、<br>
+                  さっぱりとした味わいが特徴の一品</p>
+              </div>
+              
+
+              <div class="item04">
+                <img class="menu_img" src="images/menu/food/rice/rice04.png" alt="わかめご飯">
+                <h1 class="menu_title">わかめご飯</h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  乾燥わかめを細かく刻んで
+                  ご飯と一緒に炊いた、<br>栄養たっぷりの炊き込みご飯</p>
+              </div>
+              
+              <div class="item05">
+                <img class="menu_img" src="images/menu/food/rice/rice05.png" alt="キムタクご飯">
+                <h1 class="menu_title">キムタクご飯</h1>
+                <p class="price">￥３００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  ベーコン、白菜キムチ、つぼ漬けたくあんを炒め<br>
+                  薄口醤油で味を整えた、温かいごはん</p>
+              </div>
+              
+              <div class="item06">
+                <img class="menu_img" src="images/menu/food/rice/rice06.png" alt="ほくほく白米">
+                <h1 class="menu_title">ほくほく白米</h1>
+                <p class="price">￥１００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  シンプルで食事の基本となるご飯。<br>
+                  日本料理に欠かせない存在です</p>
+              </div>
+        </div>
+        </div>
+        
+        
+        <!-- パン　-->        
+        <input id="TAB-05" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-05">パン</label>
+        <div class="tab-content">
+          <div class="grid">
+
+            <div class="item01">
+                <img class="menu_img" src="images/menu/food/bread/bread01.png"　alt="大人気！きな粉揚げパン">
+                <h1 class="menu_title">大人気！きな粉揚げパン</h1>
+                <p class="price">￥５００<span class="small">(税込)</span></p>
+                <p class="menu_text">懐かしのきな粉揚げパン<br>
+                  サクサクのパンに甘いきな粉がたまらない</p>
+              </div>
+
+              <div class="item02">
+                <img class="menu_img" src="images/menu/food/bread/bread02.png"　alt="コッペパン">
+                <h1 class="menu_title">コッペパン</h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  そのまま食べるのもよし<br>
+                  ウィンナーやジャムを挟んでさらにおいしい</p>
+              </div>
+              
+              <div class="item03">
+                <img class="menu_img" src="images/menu/food/bread/bread03.png" alt="バンズパン">
+                <h1 class="menu_title">バンズパン</h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">コロッケやとんかつを<br>
+                  はさんで食べる用のパン</p>
+              </div>
+              
+
+              <div class="item04">
+                <img class="menu_img" src="images/menu/food/bread/bread04.png" alt="ココア揚げパン">
+                <h1 class="menu_title">ココア揚げパン</h1>
+                <p class="price">￥５００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  懐かしのきな粉揚げパン<br>
+                  サクサクのパンココアの甘さがたまらない</p>
+              </div>
+              
+              <div class="item05">
+                <img class="menu_img" src="images/menu/food/bread/bread05.png" alt="もちもち食パン">
+                <h1 class="menu_title">もちもち食パン</h1>
+                <p class="price">￥３００<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  ジャムをつけて
+さらにおいしく</p>
+              </div>
+              
+        </div>   
+        </div>  
+
+        <!-- デザート　-->        
+        <input id="TAB-06" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-06">デザート</label>
+        <div class="tab-content">
+          <div class="grid">
+
+            <div class="item01">
+                <img class="menu_img" src="images/menu/food/dessert/dessert01.png" alt="お米のガトーショコラ">
+                <h1 class="menu_title">お米のガトーショコラ</h1>
+                <p class="price">￥２５０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  グルテンフリーで体に優しい<br>
+お米のガトーショコラ
+</p>
+              </div> 
+
+              <div class="item02">
+                <img class="menu_img" src="images/menu/food/dessert/dessert02.png" alt="七夕のデザート">
+                <h1 class="menu_title">七夕のデザート</h1>
+                <p class="price">￥１８０<span class="small">(税込)</span></p>
+                <p class="menu_text">
+                  七夕の日限定デザートがいつでも食べられる！
+                  懐かしい味におもいでがよみがえる。</p>
+              </div> 
+              
+              <div class="item03">
+                <img class="menu_img" src="images/menu/food/dessert/dessert03.png" alt="夏のスイカゼリー">
+                <h1 class="menu_title">夏のスイカゼリー</h1>
+                <p class="price">￥１５０<span class="small">(税込)</span></p>
+                <p class="menu_text">夏の給食に出される
+                  スイカゼリー
+                </p>
+              </div>
+              
+        </div>
+        </div>  
+
+
+ </div>
+
+ </section>
+ </div>
+ 
+
+ <!-- 牛乳　-->
+ <div class="fadeAnimation__item js-fadeAnimation fadeUp delay04s">
+<section class="milk">
+  
+  <img class="milk_img" src="images/menu/milk.png" alt="牛乳について">
+
+<div class="milk_text">
+<h1  class="milk_text01">給食の牛乳について</h1>
+<p  class="milk_text02">学校の給食で牛乳が出される理由は、栄養や保存性が良いためです。給食用牛乳はカルシウムを豊富に含んでおり、子供たちの成長に必要な栄養素を補う役割を果たしています。また、学校給食摂取基準や標準食品構成表で規定されたカルシウム値を満たすためにも、牛乳が提供されています。</p>
+
+</div>
+
+</section>
+</div>
+
+
+
+ <!-- テキストスクロール-->
+
+
+ <div class="scroll">
+  <span class="p">school lunch　school lunch　school lunch　school lunch　school lunch　school lunch　</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--アクセス情報-->
+      <div class="fadeAnimation__item js-fadeAnimation fadeUp delay04s">
+        <div class="access">
+          <div class="access01">
+            <img class="access_img" src="images/top/access01.png" />
+            <img  class="access_img_sp" src="images/top/access_img_sp.png" >
+          </div>
+
+          <div class="map-container">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.354748790175!2d137.94927747564057!3d35.34684147269709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601b7b94a533bcef%3A0xcf95856a3cbe1aeb!2z5pen5pyo5rKi5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1718702665419!5m2!1sja!2sjp"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!--アクセス情報 文章-->
+        <div class="access_text">
+          <div class="access_text02">
+            <p>
+              住所: 長野県飯田市南信濃木沢８１１（旧〇〇⼩学校）<br />
+              電話: 0123-456-789<br />
+              営業時間: ⽉曜⽇ - ⾦曜⽇, 11:00 - 20:00<br />
+              定休⽇: ⼟曜⽇、⽇曜⽇<br />
+            </p>
+          </div>
+
+          <div class="access_text03">
+            <p>
+              【交通アクセス】<br />
+              電⾞でお越しの⽅:
+              JR飯田駅からバスで約15分、「学び舎前」バス停下⾞、徒歩3分<br />
+              お⾞でお越しの:
+              関越⾃動⾞道熊⾕ICから国道407号線を経由し、約20分<br />
+              【駐⾞場情報】<br />
+              -駐⾞場完備: 店舗前に20台分のスペースあり<br />
+            </p>
+          </div>
+        </div>
+
+        <p class="endtext">
+          私たちのレストランは、飯田市の中⼼部からほど近い、静かで落ち着いた場所に位置しています。<br />
+          アクセスしやすい⽴地で、皆様のご来店をお待ちしております。
+        </p>
+      </div>
+      <!--blog-->
+      <div class="fadeAnimation__item js-fadeAnimation fadeUp delay04s">
+        <section class="blog">
+          <div class="blog_img">
+            <img class="img01" src="images/top/blog.png" />
+          </div>
+
+          <div class="blog_line">
+            <div class="blog01">
+              <img class="blog_img01" src="images/top/blog01.png" />
+              <a href="shop.php"> <p class="blog_text01">なぜ給⾷には⽜乳があったの？</p></a>
+            </div>
+
+            <div class="blog01">
+              <img class="blog_img01" src="images/top/blog02.png" />
+              <p class="blog_text01">揚げパンの秘密！！</p>
+            </div>
+
+            <div class="blog01">
+              <img class="blog_img01" src="images/top/blog03.png" />
+              <p class="blog_text01">給食の栄養について</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="sns">
+          <a href="#"
+            ><img class="social-media" src="images/top/sns.png" alt="sns"
+          /></a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 kameko momoka</p>
+        <a href="form.php"><p>お問い合わせ</p></a>
+      </div>
+    </footer>
+
+    <script defer src="main.js"></script>
+  </body>
+</html>
