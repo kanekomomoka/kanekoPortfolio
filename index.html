@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>【WD33】jQuery Lesson</title>
+    <meta name="robots" content="noindex" />
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
+
     <script
       src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"
       integrity="sha256-9zljDKpE/mQxmaR4V2cGVaQ7arF3CcXxarvgr7Sj8Uc="
@@ -21,6 +24,8 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
   </head>
   <body>
+    <div class="stalker" id="js-stalker"></div>
+
     <div class="area js-area">
       <div class="wrap">
         <!-- ↓　アニメーションさせる要素 -->
@@ -68,16 +73,97 @@
     </div>
 
     <!-- 画像一覧 -->
-    <div class="wrap01">
-      <ul class="demo01 js-demo01">
-        <li class="imglist js-imglist"><img src="img/image_(6).jpg" /></li>
-        <li class="imglist js-imglist"><img src="img/image_(6).jpg" /></li>
-        <li class="imglist js-imglist"><img src="img/image_(6).jpg" /></li>
-        <li class="imglist js-imglist"><img src="img/image_(6).jpg" /></li>
-        <li class="imglist js-imglist"><img src="img/image_(6).jpg" /></li>
-        <li class="imglist js-imglist"><img src="img/image_(6).jpg" /></li>
-      </ul>
+    <div class="list">
+      <h1 class="listTitle01">Gallery</h1>
+      <div class="wrap01">
+        <ul class="demo01 js-demo01">
+          <li class="imglist js-imglist">
+            <img src="img/list/list (1).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (2).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (3).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (4).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (5).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (6).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (7).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (8).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (9).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (10).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (11).jpg" />
+          </li>
+
+          <li class="imglist js-imglist">
+            <img src="img/list/list (1).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (2).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (3).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (4).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (5).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (6).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (7).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (8).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (9).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (10).jpg" />
+          </li>
+          <li class="imglist js-imglist">
+            <img src="img/list/list (11).jpg" />
+          </li>
+        </ul>
+      </div>
+
+      <!-- モーダル -->
+      <div id="imageModal" class="modal" style="display: none">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modalImage" src="" alt="Selected Image" />
+          <p id="modalComment"></p>
+        </div>
+      </div>
     </div>
+
+    <!-- フッター -->
+    <footer class="footer-001">
+      <!--お好きな画像を指定してください-->
+      <h1 class="footerTitle">IG33 ライブラリで魅力的な画面を作成</h1>
+
+      <p class="footer-001__copyright">@ 2023 CSS Stock All rights reserved.</p>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>

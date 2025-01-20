@@ -138,3 +138,57 @@ $(function () {
     });
   });
 });
+
+// 画像モーダル
+$(document).ready(function () {
+  // コメント配列
+  const comments = [
+    "画像1のコメントです。",
+    "画像2のコメントです。",
+    "画像3のコメントです。",
+    "画像4のコメントです。",
+    "画像5のコメントです。",
+    "画像6のコメントです。",
+    "画像7のコメントです。",
+    "画像8のコメントです。",
+    "画像9のコメントです。",
+    "画像10のコメントです。",
+    "画像11のコメントです。",
+  ];
+
+  // 画像クリック時のイベント
+  $(".js-imglist img").on("click", function () {
+    // クリックした画像のsrc取得
+    const imgSrc = $(this).attr("src");
+
+    // インデックスを取得
+    const index = $(".js-imglist img").index(this);
+
+    // モーダルに画像とコメントをセット
+    $("#modalImage").attr("src", imgSrc);
+    $("#modalComment").text(comments[index] || "コメントがありません。");
+
+    // モーダルを表示
+    $("#imageModal").fadeIn();
+  });
+
+  // モーダルを閉じる
+  $(".close").on("click", function () {
+    $("#imageModal").fadeOut();
+  });
+
+  // モーダル外をクリックして閉じる
+  $(window).on("click", function (event) {
+    if ($(event.target).is("#imageModal")) {
+      $("#imageModal").fadeOut();
+    }
+  });
+});
+
+$(document).ready(function () {
+  $(document).mousemove(function (e) {
+    $("#js-stalker").css({
+      transform: "translate(" + e.clientX + "px, " + e.clientY + "px)",
+    });
+  });
+});
