@@ -1,228 +1,316 @@
-body {
-  cursor: none;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.area {
-  overflow: hidden;
-  background-color: #dfdfdf;
-}
-.wrap {
-  position: relative;
+.slide-container {
+  position: absolute;
+  width: 100%;
   height: 100vh;
-}
-.item {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 50px;
-  font-weight: bold;
-  color: #fff;
+  overflow: hidden;
 }
-
-.img01,
-.img02,
-.img03,
-.img04,
-.img05 {
-  width: 60%;
+.slide-wrapper {
+  display: flex;
+  animation: slide-flow 90s infinite linear 1s both;
 }
-.item09,
-.item07 {
-  writing-mode: vertical-rl;
-  color: #000;
-  font-family: "ＭＳ 明朝";
-  font-size: 24px;
-  line-height: 2rem;
+.slide {
+  height: 80vh;
+  object-fit: cover;
+  border: 1px solid #ddd;
 }
-.magazine01 {
+@keyframes slide-flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+main {
   height: 100vh;
   width: 100%;
 }
-.item09,
-.item01,
-.item02,
-.item03,
-.item04,
-.item05,
-.item06,
-.item07 {
+.main_n {
+  position: relative;
+}
+
+.mainText {
   position: absolute;
+  z-index: 5;
+  color: #ff9900;
+  height: 90vh; /* 画面の高さに制限 */
+  width: 100%; /* 横幅を全体に */
+  overflow: hidden; /* テキストがはみ出た場合に非表示にする */
+  display: flex; /* 子要素の位置を調整しやすくする */
+  align-items: center; /* 垂直方向の中央揃え */
+}
+
+.mainText h1 {
+  line-height: 7rem;
+  margin: 0;
+  padding: 0;
+  font-size: 8vw; /* フォントサイズを可変にする */
+  word-wrap: break-word; /* 長い単語を折り返す */
+  max-height: 100%; /* h1の高さを親要素内に収める */
+  overflow: hidden; /* はみ出した部分を非表示にする */
+}
+.mainText span {
+  font-size: 5vw;
+}
+.sm {
+  max-width: 100%;
+  position: relative;
+  height: 90vh;
+  width: 64vw;
+  display: flex;
+  /* margin: 0 auto; */
+  margin-left: 30%;
+  z-index: 10;
+}
+.sm img {
+  opacity: 70%;
+  width: calc(100% * 4);
+}
+/* 自己紹介 */
+section:nth-of-type(1) {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .waku {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  border: 10px solid #333;
-  box-shadow: inset 0 0 5px 5px #aaa;
-}
-
-/* Book */
-
-#magazine {
-  margin: auto; /* 中央に配置 */
-  padding-bottom: 10%;
-  width: 80%;
-  height: 60%;
-}
-#magazine .turn-page {
-  background-size: 100% 100%;
-}
-.Book {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  text-align: center;
-  color: #000;
-  font-family: "ＭＳ 明朝";
-  font-size: 24px;
-  line-height: 2rem;
-}
-
-/* 画像一覧 */
-.wrap01 {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.demo01 {
-  margin: 0 auto;
-  list-style: none;
-}
-
-.imglist {
-  width: 200px;
-}
-
-.imglist img {
-  border-radius: 5%;
-  width: 100%;
-}
-
-/* モーダル */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
+  border: solid rgb(79, 79, 79);
+  width: calc(100% - 30%);
+  height: calc(100% - 20%);
   justify-content: center;
   align-items: center;
 }
-
-.modal-content {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
+.waku h1 {
+  color: #ff9900;
+  font-size: 5vw;
+  margin: 3vh;
   position: relative;
+  padding-left: 20px; /* Adjust as needed */
 }
 
-.modal-content img {
-  max-width: 50%;
+.waku h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  border-left: solid 8px rgb(79, 79, 79);
+}
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 30%);
+}
+.aboutMe img {
+  height: 300px;
+  width: 200px;
+  background-color: #ff9900;
+  margin-right: 3vw;
+}
+.aboutMe .first {
+  font-size: 1.4vw;
+  margin-bottom: 2%;
+}
+.aboutMe p {
+  font-size: 1vw;
+  font-family: sans-serif;
+  line-height: 2.5rem;
+}
+
+.about_btn {
+  margin-left: 10vw; /* テキストとの間隔を調整 */
+  display: inline-block; /* ボタンをインラインで配置 */
+  border: solid 2px #ff9900;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #ff9900;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about_btn a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+.about_btn a:hover {
+  color: #ffffff;
+}
+.about_btn:hover {
+  background-color: #ff9900;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 60vw; /*スライダー内の画像を60vwにしてレスポンシブ化*/
   height: auto;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
+.slider .slick-slide {
+  transform: scale(0.8); /*左右の画像のサイズを80%に*/
+  transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5; /*透過50%*/
 }
 
-.list {
-  padding: 5%;
-  background-color: #dfdfdf;
+.slider .slick-slide.slick-center {
+  transform: scale(1); /*中央の画像のサイズだけ等倍に*/
+  opacity: 1; /*透過なし*/
 }
-.listTitle01 {
-  /* margin-top: 10%; */
-  margin-bottom: 10%;
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute; /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: none; /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666; /*矢印の色*/
+  border-right: 2px solid #666; /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
   text-align: center;
-  color: #000;
-  font-family: "ＭＳ 明朝";
-  font-size: 34px;
-  line-height: 2rem;
+  margin: 20px 0 0 0;
 }
 
-/* カーソルストーカー */
-.stalker {
-  background-color: rgba(28, 180, 211, 0.5); /* 背景色 */
-  border-radius: 50%; /* 正円 */
-  height: 30px; /* 円の高さ */
-  width: 30px; /* 円の幅 */
-  position: fixed; /* スクロールしても位置を固定 */
-  pointer-events: none; /* クリックを無効化 */
-  transition: transform 0.1s ease-out; /* 遅れてついてくる */
-  z-index: 999; /* 最前面に表示 */
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
 }
 
-/* フッター */
-.footer-001 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 25px 10px 10px;
-  background-color: #ffffff;
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px; /*ドットボタンのサイズ*/
+  height: 8px; /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc; /*ドットボタンの色*/
 }
 
-.footer-001__logo {
-  width: 130px;
-  height: 30px;
+.slick-dots .slick-active button {
+  background: #333; /*ドットボタンの現在地表示の色*/
 }
 
-.footer-001__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0 1.5em;
-  list-style-type: none;
-  margin: 0 0 0.5em;
-  padding: 0.5em;
+/* Gallery */
+.tab_container {
+  padding-bottom: 1em;
+  background-color: #fff;
+  margin: 0 auto;
 }
+.tab_item {
+  width: calc(100% / 3);
+  padding: 15px 0;
 
-.footer-001__copyright {
-  margin: 0;
-  color: #5f5f5fb3;
-  font-weight: 200;
-  font-size: 0.8em;
-}
-.footerTitle {
+  background-color: #ececec;
   text-align: center;
-  color: #000;
-  font-family: "ＭＳ 明朝";
-  font-size: 21px;
-  line-height: 2rem;
+  color: #3b3b3b;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+input[name="tab_item"] {
+  display: none;
+}
+.tab_content {
+  display: none;
+  padding: 1em 1em 0;
+  clear: both;
+  overflow: hidden;
+}
+#tab1:checked ~ #tab1_content,
+#tab2:checked ~ #tab2_content,
+#tab3:checked ~ #tab3_content {
+  display: block;
+}
+.tab_container input:checked + .tab_item {
+  background-color: #3b3b3b;
+  color: #ff9900;
 }
 
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 300px;
+  padding-bottom: 10vh;
 }
 
 .gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 20%;
+  background-color: #ffffff;
+  margin-bottom: 3vh;
+  border-radius: 3%;
 }
 
 .gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #ff9900;
 }
 
 .gallery img {
   width: 100%;
   height: auto;
+  border-radius: 3%;
 }
 
 .gallery-desc {
   padding: 15px;
   text-align: center;
   font-size: 14px;
+}
+
+.content03 {
+  height: 100%;
+}
+.listTitle01 {
+  text-align: center;
+  color: #ff9900;
+  font-size: 5vw;
+  margin: 3vh;
 }

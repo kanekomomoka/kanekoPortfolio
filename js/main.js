@@ -1,107 +1,3 @@
-window.addEventListener("load", function () {
-  // プラグインを定義
-  gsap.registerPlugin(ScrollTrigger);
-
-  const area = document.querySelector(".js-area");
-  const items = document.querySelectorAll(".js-item");
-  const num = items.length;
-
-  // 位置とscaleを指定
-  items.forEach((item, i) => {
-    gsap.set(item, {
-      zIndex: num - i,
-    });
-  });
-  gsap.set(".js-item09", {
-    scale: 1,
-    width: "100%",
-    height: "100%",
-    left: 0,
-    top: 0,
-  });
-  gsap.set(".js-item01", {
-    scale: 0,
-    width: "50%",
-    height: "75%",
-    left: "0.5%",
-    top: "20%",
-  });
-  gsap.set(".js-item02", {
-    scale: 0,
-    width: "75%",
-    height: "50%",
-    left: "12.5%",
-    top: "25%",
-  });
-  gsap.set(".js-item03", {
-    scale: 0,
-    width: "50%",
-    height: "75%",
-    left: 0,
-    top: 0,
-  });
-  gsap.set(".js-item04", {
-    scale: 0,
-    width: "150%",
-    height: "60%",
-    left: 0,
-    top: 0,
-  });
-  gsap.set(".js-item05", {
-    scale: 0,
-    width: "50%",
-    height: "75%",
-    left: "0.5%",
-    top: "20%",
-  });
-  gsap.set(".js-item06", {
-    scale: 0,
-    width: "100%",
-    height: "100%",
-    left: 0,
-    top: 0,
-  });
-  gsap.set(".js-item07", {
-    scale: 0,
-    width: "100%",
-    height: "100%",
-    left: 0,
-    top: 0,
-  });
-
-  // タイムライン
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: area, // トリガー
-      start: "top top", // 開始位置
-      end: "+=4000", // 終了位置
-      scrub: true, // スクロール量に応じて動かす
-      pin: true, // ピン留め
-    },
-  });
-  // 要素を順に拡大する
-
-  tl.to(".js-item09", { scale: 1, duration: 1 })
-    .to(".js-item09", { opacity: 0, duration: 0.2 }, "-=0.2")
-    .to(".js-item01", { scale: 1, duration: 1 })
-    .to(".js-item01", { opacity: 0, duration: 0.2 }, "-=0.2")
-    .to(
-      ".js-item02",
-      { scale: 1, left: "62.5%", top: "55%", duration: 1 },
-      "-=0.3"
-    ) // 早める
-    .to(".js-item02", { opacity: 0, duration: 0.2 }, "-=0.2")
-    .to(".js-item03", { scale: 1, duration: 1 }, "-=0.6") // 早める
-    .to(".js-item03", { opacity: 0, duration: 0.2 }, "-=0.2")
-    .to(".js-item04", { scale: 1, duration: 1 }, "-=0.4") // 早める
-    .to(".js-item04", { opacity: 0, duration: 0.2 }, "-=0.2")
-    .to(".js-item05", { scale: 1, duration: 1 }, "-=0.4") // 早める
-    .to(".js-item05", { opacity: 0, duration: 0.2 }, "-=0.2")
-    .to(".js-item06", { scale: 1, duration: 1 }, "-=0.2") // 早める
-    .to(".js-item06", { opacity: 0, duration: 0.2 }, "-=0.2")
-    .to(".js-item07", { scale: 1, duration: 1 }, "-=0.4"); // 早める
-});
-
 // Book
 
 $(window).ready(function () {
@@ -123,72 +19,15 @@ $(window).bind("keydown", function (e) {
   else if (e.keyCode == 39) $("#magazine").turn("next");
 });
 
-// 画像一覧
-$(function () {
-  var $demo1 = $(".js-demo01"); //コンテナとなる要素を指定
-
-  $demo1.imagesLoaded(function () {
-    //imagesLoadedを使用し、画像が読み込みまれた段階でMasonryの関数を実行させる
-    //Masonryの関数↓
-    $demo1.masonry({
-      //オプション指定箇所
-      itemSelector: ".js-imglist", //コンテンツを指定
-      columnWidth: 205, //カラム幅を設定
-      fitWidth: true, //コンテンツ数に合わせ親の幅を自動調整
-    });
-  });
-});
-
-// 画像モーダル
-$(document).ready(function () {
-  // コメント配列
-  const comments = [
-    "画像1のコメントです。",
-    "画像2のコメントです。",
-    "画像3のコメントです。",
-    "画像4のコメントです。",
-    "画像5のコメントです。",
-    "画像6のコメントです。",
-    "画像7のコメントです。",
-    "画像8のコメントです。",
-    "画像9のコメントです。",
-    "画像10のコメントです。",
-    "画像11のコメントです。",
-  ];
-
-  // 画像クリック時のイベント
-  $(".js-imglist img").on("click", function () {
-    // クリックした画像のsrc取得
-    const imgSrc = $(this).attr("src");
-
-    // インデックスを取得
-    const index = $(".js-imglist img").index(this);
-
-    // モーダルに画像とコメントをセット
-    $("#modalImage").attr("src", imgSrc);
-    $("#modalComment").text(comments[index] || "コメントがありません。");
-
-    // モーダルを表示
-    $("#imageModal").fadeIn();
-  });
-
-  // モーダルを閉じる
-  $(".close").on("click", function () {
-    $("#imageModal").fadeOut();
-  });
-
-  // モーダル外をクリックして閉じる
-  $(window).on("click", function (event) {
-    if ($(event.target).is("#imageModal")) {
-      $("#imageModal").fadeOut();
-    }
-  });
-});
-
-$(document).ready(function () {
-  $(document).mousemove(function (e) {
-    $("#js-stalker").css({
-      transform: "translate(" + e.clientX + "px, " + e.clientY + "px)",
-    });
-  });
+$(".slider").slick({
+  autoplay: false, //自動的に動き出すか。初期値はfalse。
+  infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+  speed: 500, //スライドのスピード。初期値は300。
+  slidesToShow: 3, //スライドを画面に3枚見せる
+  slidesToScroll: 1, //1回のスクロールで1枚の写真を移動して見せる
+  prevArrow: '<div class="slick-prev"></div>', //矢印部分PreviewのHTMLを変更
+  nextArrow: '<div class="slick-next"></div>', //矢印部分NextのHTMLを変更
+  centerMode: true, //要素を中央ぞろえにする
+  variableWidth: true, //幅の違う画像の高さを揃えて表示
+  dots: true, //下部ドットナビゲーションの表示
 });

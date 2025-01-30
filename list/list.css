@@ -1,0 +1,88 @@
+body {
+  display: block;
+}
+/* main */
+main {
+  text-align: center;
+  margin-top: 3vh;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next row */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center the gallery items */
+  padding: 20px;
+}
+
+.gallery ul {
+  width: calc(100% - 30%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between list items */
+}
+
+.gallery li {
+  flex: 0 1 calc(33.333% - 20px); /* Make each item take 1/3 of the row minus gap */
+  box-sizing: border-box;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.popup.active {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .gallery li {
+    flex: 0 1 calc(50% - 20px); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery li {
+    flex: 0 1 100%; /* 1 column for very small screens */
+  }
+}
+
+section {
+  padding-left: 20%;
+  text-align: left;
+  display: inline-block;
+}
+.title {
+  font-size: 1.7vw;
+  color: rgb(59, 59, 59);
+}

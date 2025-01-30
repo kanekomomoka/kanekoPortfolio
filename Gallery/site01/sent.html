@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[公式]お問い合わせ/ 長野県飯田市にある給食を食べられる食堂 おいしい給食亭</title>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      [公式]お問い合わせ/ 長野県飯田市にある給食を食べられる食堂 おいしい給食亭
+    </title>
+
     <link rel="stylesheet" href="css/otoiawase.css" />
-    <link rel="icon" href="images/top/Logo01.png">
-</head>
-<body>
-        <!-- ヘッダー-->
-        <header class="c-header c-hamburger-menu"><!-- 追記 クラスを追記 -->
-      <a href="index.php" class="c-header__logo">
-           <img class="logo_main" src="images/top/Logo.png" alt="なつかし給食亭" >
+    <link rel="icon" href="images/top/Logo01.png" />
+  </head>
+  <body>
+    <!-- ヘッダー-->
+    <header class="c-header c-hamburger-menu">
+      <!-- 追記 クラスを追記 -->
+      <a href="index.html" class="c-header__logo">
+        <img class="logo_main" src="images/top/Logo.png" alt="なつかし給食亭" />
       </a>
-      <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
-      <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
-      <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+      <input
+        type="checkbox"
+        name="hamburger"
+        id="hamburger"
+        class="c-hamburger-menu__input"
+      /><!-- 追記 idはlabelのforと同じにする -->
+      <label for="hamburger" class="c-hamburger-menu__bg"></label
+      ><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+      <ul class="c-header__list c-hamburger-menu__list">
+        <!-- 追記 クラスを追記 -->
 
         <li class="c-header__list-item01">
-          <a href="index.php" class="c-header__list-link01">トップ</a>
+          <a href="index.html" class="c-header__list-link01">トップ</a>
         </li>
         <li class="c-header__list-item">
-          <a href="menu.php" class="c-header__list-link">こんだて</a>
+          <a href="menu.html" class="c-header__list-link">こんだて</a>
         </li>
         <li class="c-header__list-item">
-          <a href="news.php" class="c-header__list-link">お知らせ</a>
+          <a href="news.html" class="c-header__list-link">お知らせ</a>
         </li>
         <li class="c-header__list-item">
-          <a href="shop.php" class="c-header__list-link">お店の紹介</a>
+          <a href="shop.html" class="c-header__list-link">お店の紹介</a>
         </li>
         <li class="c-header__list-item">
-          <a href="blog.php" class="c-header__list-link">コラム
-            
-          </a>
+          <a href="blog.html" class="c-header__list-link">コラム </a>
         </li>
       </ul>
       <label for="hamburger" class="c-hamburger-menu__button">
-        
-        
         <!-- 追記 ハンバーガーメニューのボタン -->
         <span class="c-hamburger-menu__button-mark"></span>
         <span class="c-hamburger-menu__button-mark"></span>
@@ -46,27 +52,26 @@
       </label>
     </header>
 
-
     <div class="main">
-    <div class="thanks-message">お問い合わせいただきありがとうございます。</div>
-    <div class="display-contact">
-      <div class="form-title">入力内容</div>
+      <div class="thanks-message">
+        お問い合わせいただきありがとうございます。
+      </div>
+      <div class="display-contact">
+        <div class="form-title">入力内容</div>
 
-      <div class="form-item">■ 名前</div>
-      <?php echo $_POST['name']; ?>
+        <div class="form-item">■ 名前</div>
+        <?html echo $_POST['name']; ?>
 
-      <div class="form-item">■ 年齢</div>
-      <?php echo $_POST['age']; ?>
+        <div class="form-item">■ 年齢</div>
+        <?html echo $_POST['age']; ?>
 
-      <div class="form-item">■ お問い合わせの種類</div>
-      <!-- この下でcategoryを受け取りechoしましょう -->
-      <?php  ?>
+        <div class="form-item">■ お問い合わせの種類</div>
+        <!-- この下でcategoryを受け取りechoしましょう -->
+        <?html  ?>
 
-      <div class="form-item">■ 内容</div>
-      <?php echo $_POST['body']; ?>
+        <div class="form-item">■ 内容</div>
+        <?html echo $_POST['body']; ?>
+      </div>
     </div>
-  </div>
-
-
-</body>
+  </body>
 </html>

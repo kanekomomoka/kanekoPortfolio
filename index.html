@@ -5,7 +5,6 @@
     <title>Kaneko Momoka PortfolioSite</title>
     <meta name="robots" content="noindex" />
 
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
 
@@ -15,148 +14,263 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="js/gsap.js"></script>
-    <script src="js/ScrollTrigger.js"></script>
-
     <script type="text/javascript" src="js/turn.min.js"></script>
 
-    <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
+
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
-    <div class="stalker" id="js-stalker"></div>
+    <main>
+      <div class="slide-container">
+        <div class="slide-wrapper">
+          <img class="slide" src="img/main02/main.png" alt="" />
 
-    <div class="area js-area">
-      <div class="wrap">
-        <!-- ↓　アニメーションさせる要素 -->
-        <div class="item item09 js-item js-item09">
-          <span class="vertical writing">画面をスクロールしてください</span>
+          <img class="slide" src="img/main02/main.png" alt="" />
+
+          <img class="slide" src="img/main02/main.png" alt="" />
         </div>
-        <div class="item item01 js-item js-item01">
-          <span
-            ><img src="img/main/main03.jpg" class="img01" width="900px"
-          /></span>
+        <div class="slide-wrapper">
+          <img class="slide" src="img/main02/main.png" alt="" />
+
+          <img class="slide" src="img/main02/main.png" alt="" />
+
+          <img class="slide" src="img/main02/main.png" alt="" />
         </div>
-        <div class="item item02 js-item js-item02">
-          <span><img src="img/main/main06.png" width="700px" /></span>
+        <div class="slide-wrapper">
+          <img class="slide" src="img/main02/main.png" alt="" />
+
+          <img class="slide" src="img/main02/main.png" alt="" />
+
+          <img class="slide" src="img/main02/main.png" alt="" />
         </div>
-        <div class="item item03 js-item js-item03">
-          <span><img src="img/main/mian04.jpg" class="img02" /></span>
-        </div>
-        <div class="item item04 js-item js-item04">
-          <span><img src="img/main/main03.jpg" width="800px" /></span>
-        </div>
-        <div class="item item05 js-item js-item05">
-          <span><img src="img/main/main07.jpg" width="800px" /></span>
-        </div>
-        <div class="item item06 js-item js-item06">
-          <span><img src="img/main/main05.JPG" width="800px" /></span>
-        </div>
-        <div class="item item07 js-item js-item07">
-          <span class="vertical writing"
-            >HAL東京<br />金子桃花の<br />ポートフォリオサイト</span
-          >
-        </div>
-        <!-- ↑　アニメーションさせる要素 -->
       </div>
-    </div>
 
-    <div class="magazine01">
+      <div class="main_n">
+        <div class="mainText">
+          <h1>
+            <span>2025</span><br />
+            MOMOKA<br />KANEKA<br />
+            <span>PORTFOLIO</span>
+          </h1>
+        </div>
+
+        <div class="sm">
+          <img src="img/main02/main01.png" alt="" />
+          <img src="img/main02/main02.png" alt="" />
+          <img src="img/main02/main03.png" alt="" />
+          <img src="img/main02/main04.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <section>
+      <div class="waku">
+        <h1>ABOUT ME</h1>
+        <!-- 自己紹介内容 -->
+        <div class="aboutMe">
+          <div><img src="" alt="" /></div>
+          <div>
+            <p class="first">はじめまして、こんにちは！</p>
+            <p>HAL東京3年のグラフィックス専攻の“金子桃花”です！</p>
+            <p>2年生の時に始まったWEBの授業をきっかけに、</p>
+            <p>WEB制作に興味を持ち始めました！</p>
+            <p>ユーザーにとって、見ていて「楽しい」を作れるように、</p>
+            <p>WEB制作をしています。</p>
+            <p>
+              よろしくお願いいたします！
+              <span class="about_btn"
+                ><a href="./about.html">SHOW ME MORE</a></span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="magazine01">
       <!-- Book -->
-      <h1 class="Book">キーボードの「←」「→」をクリック</h1>
-      <div id="magazine">
-        <div style="background-image: url(img/portfolioPages/page01.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page02.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page03.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page04.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page05.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page06.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page07.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page08.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page09.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page10.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page11.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page12.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page13.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page14.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page15.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page16.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page17.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page18.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page19.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page20.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page21.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page22.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page23.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page24.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page25.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page26.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page27.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page28.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page29.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page30.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page31.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page32.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page33.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page34.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page35.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page36.png)"></div>
-        <div style="background-image: url(img/portfolioPages/page37.png)"></div>
+
+      <ul class="slider">
+        <li><img src="img/portfolioPages/page01.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page02.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page03.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page04.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page05.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page06.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page07.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page08.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page09.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page10.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page11.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page12.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page13.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page14.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page15.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page16.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page17.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page18.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page19.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page20.png" alt="" /></li>
+
+        <li><img src="img/portfolioPages/page21.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page22.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page23.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page24.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page25.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page26.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page27.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page28.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page29.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page30.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page31.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page32.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page33.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page34.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page35.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page36.png" alt="" /></li>
+        <li><img src="img/portfolioPages/page37.png" alt="" /></li>
+      
+        <!--/slider-->
+      </ul>
+    </section>
+
+<div class="listTitle">
+    <h1 class="listTitle01">My Work</h1>
+    </div>    <!-- Gallery -->
+    <div class="tab_container">
+      <input id="tab1" type="radio" name="tab_item" checked />
+      <label class="tab_item" for="tab1">全て</label>
+      <input id="tab2" type="radio" name="tab_item" />
+      <label class="tab_item" for="tab2">WEB</label>
+      <input id="tab3" type="radio" name="tab_item" />
+      <label class="tab_item" for="tab3">グラフィック</label>
+
+      <!-- 全て -->
+      <div class="tab_content" id="tab1_content">
+        <div class="tab_content_description">
+          <p class="c-txtsp">
+            
+             <!-- Gallery02 -->
+
+
+    <div class="content03">
+      <div class="gallery-container">
+        <!-- 1列目 -->
+        <div class="gallery">
+          <a target="_blank" href="list/list01.html">
+            <img src="img/portfolioPages/page05.png" width="300" height="200" />
+          </a>
+          <div class="gallery-desc">【WEB】店舗サイトのデザインと実装</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="リンク先のパス">
+            <img
+              src="img/portfolioPages/page12.png"
+              width="300"
+              height="200"
+            />
+          </a>
+          <div class="gallery-desc">【WEB】映画情報サイト</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="リンク先のパス">
+            <img
+              src="img/portfolioPages/page21.png"
+              width="300"
+              height="200"
+            />
+          </a>
+          <div class="gallery-desc">【グラフィック】個展告知リーフレット制作</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="リンク先のパス">
+            <img
+            src="img/portfolioPages/page16.png"
+              width="300"
+              height="200"
+            />
+          </a>
+          <div class="gallery-desc">【グラフィック】撮影した写真を利用したLP制作</div>
+        </div>
+
+        <!-- 2列目 -->
+        <div class="gallery">
+          <a target="_blank" href="list/list01.html">
+            <img src="img/portfolioPages/page27.png" width="300" height="200" />
+          </a>
+          <div class="gallery-desc">【グラフィック】</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="リンク先のパス">
+            <img
+              src="img/portfolioPages/page35.png"
+              width="300"
+              height="200"
+            />
+          </a>
+          <div class="gallery-desc">【その他】デッサン</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="リンク先のパス">
+            <img
+              src="img/portfolioPages/page37.png"
+              width="300"
+              height="200"
+            />
+          </a>
+          <div class="gallery-desc">【その他】モデリング</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="リンク先のパス">
+            <img
+              src="https://codinghaku.com/wp-content/uploads/2023/02/hp04.jpg"
+              width="300"
+              height="200"
+            />
+          </a>
+          <div class="gallery-desc">個展告知サイト</div>
+        </div>
       </div>
     </div>
 
-    <!-- Gallery -->
-    <h1 class="listTitle01">Gallery</h1>
-    <div class="gallery-container">
-      <div class="gallery">
-        <a target="_blank" href="Gallery/site01/index.html">
-          <img src="img/portfolioPages/page05.png" width="300" height="200" />
-        </a>
-        <div class="gallery-desc">ここに画像テキストの説明を追加します</div>
+          </p>
+        </div>
       </div>
 
-      <div class="gallery">
-        <a target="_blank" href="リンク先のパス">
-          <img
-            src="https://codinghaku.com/wp-content/uploads/2023/02/hp02.jpg"
-            width="300"
-            height="200"
-          />
-        </a>
-        <div class="gallery-desc">ここに画像テキストの説明を追加します</div>
+      <!-- WEB -->
+      <div class="tab_content" id="tab2_content">
+        <div class="tab_content_description">
+          <p class="c-txtsp">タブ2の内容</p>
+        </div>
       </div>
 
-      <div class="gallery">
-        <a target="_blank" href="リンク先のパス">
-          <img
-            src="https://codinghaku.com/wp-content/uploads/2023/02/hp03.jpg"
-            width="300"
-            height="200"
-          />
-        </a>
-        <div class="gallery-desc">ここに画像テキストの説明を追加します</div>
-      </div>
-
-      <div class="gallery">
-        <a target="_blank" href="リンク先のパス">
-          <img
-            src="https://codinghaku.com/wp-content/uploads/2023/02/hp04.jpg"
-            width="300"
-            height="200"
-          />
-        </a>
-        <div class="gallery-desc">ここに画像テキストの説明を追加します</div>
+      <!-- グラフィック -->
+      <div class="tab_content" id="tab3_content">
+        <div class="tab_content_description">
+          <p class="c-txtsp">タブ3の内容</p>
+        </div>
       </div>
     </div>
 
-    <!-- フッター -->
-    <footer class="footer-001">
-      <!--お好きな画像を指定してください-->
-      <h1 class="footerTitle">IG33 ライブラリで魅力的な画面を作成</h1>
+   
 
-      <p class="footer-001__copyright">@ 2023 CSS Stock All rights reserved.</p>
-    </footer>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
