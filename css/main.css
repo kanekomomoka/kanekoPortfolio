@@ -314,3 +314,8 @@ input[name="tab_item"] {
   font-size: 5vw;
   margin: 3vh;
 }
+footer {
+  text-align: center;
+  background-color: #ccc;
+  padding: 5vh;
+}
