@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       "../../img/portfolioPages/ig01.png",
       "../../img/portfolioPages/ig02.png",
-      "../../img/portfolioPages/ig03.png",
-      "../../img/portfolioPages/ig04.png",
     ],
     samplePageLink: "../Gallery/site01/index.html",
   };
