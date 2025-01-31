@@ -111,8 +111,8 @@ section:nth-of-type(1) {
   height: calc(100% - 30%);
 }
 .aboutMe img {
-  width: 15vw;
-  object-fit: cover;
+  /* height: 300px; */
+  width: 13vw;
   background-color: #ff9900;
   margin-right: 3vw;
 }
