@@ -360,13 +360,9 @@ footer {
   }
 
   .aboutMe img {
-    /* text-align: center; */
-    /* margin: auto; */
-    /* display: block; */
-    height: 170px;
-    width: 150px;
+    /* height: 300px; */
+    width: 13vw;
     background-color: #ff9900;
-    margin-right: 0vw;
   }
 
   .aboutMe p {
