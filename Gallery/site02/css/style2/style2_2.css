@@ -1,0 +1,433 @@
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothuc Medium","游ゴシック　Medium";
+    line-height: 1.7;
+    color: #432;
+
+
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+
+}
+.logo{
+    width: 210px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 14px;
+    list-style: none;
+    padding-right: 50px;
+    
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color: rgb(255, 255, 255);
+}
+.main-nav a:hover{
+    color: #f159df;
+}
+.page-header{
+    background-color: #59C4F1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1500px;
+    position: fixed;
+    width: 100vw; 
+ 
+}
+.main{
+   width: 1700px ; 
+   padding-top: 74px;
+
+   animation-name: fadein;
+   animation-duration: 4s; 
+}
+
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+*{
+    margin:0;
+    padding:0;
+    }
+    .menu01{
+        display: flex;
+    justify-content: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        list-style: none;
+        border-top: solid 1.7px;
+        border-bottom: solid 1.7px;
+        line-height:2.7;
+        justify-content: space-evenly;
+        margin: 30px 0px 50px 0px;
+        color: #000000;
+
+        animation-name: fadein;
+        animation-duration: 4s; 
+    
+    }
+
+    div{
+        text-align: center;
+        font-family: "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 20%,0% 90%;
+    
+        
+    }
+
+
+    @keyframes fadein{
+        from{
+        opacity: 0;
+        transform: translatey(20px);
+        }
+        to{
+        opacity: 1;
+        transform: translatey(0);
+        }
+    }
+
+
+#char-list{
+    font-size: 30px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    margin: 100px 0px 80px 0px;
+    border-bottom:solid ;
+
+  letter-spacing: 0.5em;
+
+  animation-name: fadein;
+  animation-duration: 4s; 
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+.pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: translateY(20%) rotate(-45deg);
+}
+
+
+
+/* リストデザイン010 */
+.list_design010 {
+    font-size: 20px;
+    letter-spacing: 0.4em;
+    margin: 0px 300px 0px 300px;
+
+    justify-content: space-evenly;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+  }
+  .list_design010 li {
+    list-style: none;
+    margin: 10px;
+    padding: 0 0 0 5px;
+    border-bottom: solid #999 1px;
+    border-left: solid #333 2.5px;
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+  }
+
+
+/* リストデザイン011 */
+.list_design011 {
+    font-size: 20px;
+    letter-spacing: 0.4em;
+    margin: 30px 300px 100px 300px;
+    
+    justify-content: space-evenly;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  .list_design011 li {
+    list-style: none;
+    margin: 10px;
+    padding: 0 0 0 5px;
+    border-bottom: solid #999 1px;
+    border-left: solid #333 2.5px;
+  }
+
+
+
+
+
+
+#Production{
+    font-size: 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    margin: 50px 100px 30px 100px;
+    border-bottom:solid ;
+}
+
+
+
+
+
+    /*すずめ*/
+.suzume{
+    margin: 50px 130px 30px 130px;
+
+}
+.name1{
+    font-size: 50px;
+    margin: 100px 90px 10px 150px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv01{
+    font-size: 20px;
+}
+
+.serif01{
+    font-size: 19px;
+    margin: 0px 50px 200px 50px;
+    text-align: center;
+
+}
+.voice01{
+  
+    margin: 0px 50px 20px 0px;
+}
+
+/* 点線 */
+
+.hr2 {
+  border-top: 5px dotted #a6cfff; /* 点線 */
+}
+
+hr {
+    padding: 0px 0;
+  }
+  
+
+  /*草太*/
+  .souta{
+    margin: 90px 130px 0px 130px;
+
+}
+.name2{
+    font-size: 50px;
+    margin: 150px 50px 10px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv02{
+    font-size: 20px;
+}
+.serif02{
+    font-size: 19px;
+    margin: 0px 50px 180px 50px;
+    text-align: center;
+
+}
+
+.voice02{
+  
+    margin: 0px 50px 20px 50px;
+}
+
+ /*だいじん*/
+ .daijin{
+    margin: 90px 130px 0px 130px;
+ }
+.name3{
+    font-size: 50px;
+    margin: 150px 50px 20px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv03{
+    font-size: 20px;
+}
+
+.serif03{
+    font-size: 19px;
+    margin: 0px 50px 200px 50px;
+    text-align: center;
+
+}
+
+  /*tamaki*/
+  .tamaki{
+    margin: 90px 130px 0px 130px;
+
+}
+.name4{
+    font-size: 50px;
+    margin: 150px 50px 20px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv04{
+    font-size: 20px;
+}
+.serif04{
+    font-size: 19px;
+    margin: 0px 50px 180px 50px;
+    text-align: center;
+
+}
+
+ /*minoru*/
+ .minoru{
+    margin: 90px 130px 0px 130px;
+ }
+.name5{
+    font-size: 50px;
+    margin: 150px 50px 20px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv05{
+    font-size: 20px;
+}
+
+.serif05{
+    font-size: 19px;
+    margin: 0px 50px 200px 50px;
+    text-align: center;
+
+}
+
+  /*rumi*/
+  .rumi{
+    margin: 90px 130px 0px 130px;
+
+}
+.name6{
+    font-size: 50px;
+    margin: 150px 50px 20px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv06{
+    font-size: 20px;
+}
+.serif06{
+    font-size: 19px;
+    margin: 0px 50px 180px 50px;
+    text-align: center;
+
+}
+
+ /*tika*/
+ .tika{
+    margin: 90px 130px 0px 130px;
+ }
+.name7{
+    font-size: 50px;
+    margin: 150px 50px 20px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv07{
+    font-size: 20px;
+}
+
+.serif07{
+    font-size: 19px;
+    margin: 0px 50px 200px 50px;
+    text-align: center;
+}
+
+  /*tsubame*/
+  .tsubame{
+    margin: 90px 130px 0px 130px;
+
+}
+.name8{
+    font-size: 50px;
+    margin: 150px 50px 20px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv08{
+    font-size: 20px;
+}
+.serif08{
+    font-size: 19px;
+    margin: 0px 50px 180px 50px;
+    text-align: center;
+
+}
+
+ /*serizawa*/
+ .serizawa{
+    margin: 90px 130px 0px 130px;
+ }
+.name9{
+    font-size: 50px;
+    margin: 150px 50px 20px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv09{
+    font-size: 20px;
+}
+
+.serif09{
+    font-size: 19px;
+    margin: 0px 50px 200px 50px;
+    text-align: center;
+}
+
+  /*tsubame*/
+  .hitujirou{
+    margin: 90px 130px 0px 130px;
+
+}
+.name10{
+    font-size: 50px;
+    margin: 150px 50px 20px 50px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+.cv10{
+    font-size: 20px;
+}
+.serif10{
+    font-size: 19px;
+    margin: 0px 50px 180px 50px;
+    text-align: center;
+
+}

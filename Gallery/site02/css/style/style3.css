@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothuc Medium","游ゴシック　Medium";
+    line-height: 1.7;
+    color: #432;
+
+
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+
+}
+.logo{
+    width: 0px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+.main-nav{
+    display: flex;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    list-style: none;
+    padding-right: 50px;
+    
+}
+.main-nav li{
+    margin-left: 30px;
+}
+.main-nav a{
+    color: rgb(255, 255, 255);
+}
+.main-nav a:hover{
+    color: #f159df;
+}
+.page-header{
+    background-color: #59C4F1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1500px;
+    position: fixed;
+    width: 100vw; 
+}
+.main{
+   width: 1700px ; 
+   padding-top: 74px;
+
+   animation-name: fadein;
+   animation-duration: 4s; 
+}
+
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+*{
+    margin:0;
+    padding:0;
+    }
+#synopsis{
+    font-size: 80px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    border-bottom:solid ;
+   margin: 30px 100px 50px 100px;
+   line-height: 1.2;
+   letter-spacing: 0.18em;
+
+   animation-name: fadein;
+   animation-duration: 4s; 
+   animation-delay:1s;
+}
+
+div{
+    text-align: center;
+    font-family: "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+    background-image:url(../../image/v-pc.png),url(../../image/b35f3c9d.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 5%,0% 90%;
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+}
+.menu01{
+    display: flex;
+justify-content: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    list-style: none;
+    border-top: solid 1.7px;
+    border-bottom: solid 1.7px;
+    line-height:2.7;
+    justify-content: space-evenly;
+    margin: 30px 0px 50px 0px;
+    color: #000000;
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+}
+
+.menu01 a:hover{ 
+     color: #f159df;
+
+}
+
+.t01{
+    font-size: 15px;
+    line-height: 3;
+    font-weight:500; 
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+    animation-delay:1s;
+
+}
+
+
+.t02{
+    font-size: 15px;
+    line-height: 3;
+    font-weight:500; 
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+    animation-delay:1s;
+
+}
+
+
+.t03{
+    font-size: 15px;
+    line-height: 3;
+    font-weight:550; 
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+    animation-delay:2s;
+
+}
+
+
+.t04{
+    font-size: 15px;
+    line-height: 3;
+    font-weight:500; 
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+    animation-delay:3s;
+
+}
+
+.t05{
+    font-size: 15px;
+    line-height: 3;
+    font-weight:500; 
+
+    animation-name: fadein;
+    animation-duration: 4s; 
+    animation-delay:4s;
+
+}
+
+@keyframes fadein{
+    from{
+    opacity: 0;
+    transform: translatey(20px);
+    }
+    to{
+    opacity: 1;
+    transform: translatey(0);
+    }
+}
+
+
+.sinkai{
+    width: 300px ; 
+    margin: 50px 50px 0px 80px
+    ;}
+
+#Production{
+    font-size: 40px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    border-bottom:solid ;
+    margin: 45px 100px 50px 100px;
+    
+}
+
+.t06{
+    margin: 200px 50px 100px 50px;
+    line-height: 2.5;
+    text-align: left;
+    
+}
+
+.sankou{
+    width: 350px ; 
+    margin: 0px 30px 0px 0px
+    ;}
+
+.t07{
+    margin: 600px 50px 0px 50px;
+    line-height: 2.5;
+    text-align: left;
+}
+
+.t08{
+    margin: 10px 50px 50px 50px;
+    line-height: 2.5;
+    text-align: left;
+}
+
+.m01{
+      width: 80%; 
+      margin: 50px 0px 200px 0px;
+}
+
+
+
+#summary{
+    font-size: 40px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    border-bottom:solid ;
+    margin: 145px 200px 50px 200px
+}
+
+
+#yokoku{
+    font-size: 40px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    border-bottom:solid ;
+    margin: 60px 100px 0px 100px;
+
+ 
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table tr{
+    border-bottom: solid 2px white;
+  }
+  
+  table tr:last-child{
+    border-bottom: none;
+  }
+  
+  table th{
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #52c2d0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  table th:after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:calc(50% - 10px);
+    right:-10px;
+    border-left: 10px solid #52c2d0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  table td{
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+  }

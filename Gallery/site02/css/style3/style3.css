@@ -1,0 +1,262 @@
+
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothuc Medium","游ゴシック　Medium";
+    line-height: 1.7;
+    color: #432;
+
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+
+}
+.logo{
+    width: 210px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 14px;
+    list-style: none;
+    padding-right: 50px;
+    
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color: rgb(255, 255, 255);
+}
+.main-nav a:hover{
+    color: #f159df;
+}
+.page-header{
+    background-color: #59C4F1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 1500px;
+    position: fixed;
+    width: 100vw; 
+ 
+}
+.main{
+   width: 1700px ; 
+   padding-top: 74px;
+   
+
+   animation-name: fadein;
+   animation-duration: 4s; 
+}
+
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+*{
+    margin:0;
+    padding:0;
+    }
+    .menu01{
+        display: flex;
+    justify-content: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        list-style: none;
+        border-top: solid 1.7px;
+        border-bottom: solid 1.7px;
+        line-height:2.7;
+        justify-content: space-evenly;
+        margin: 30px 0px 50px 0px;
+        color: #000000;
+
+        animation-name: fadein;
+        animation-duration: 4s; 
+    
+    }
+
+    div{
+        text-align: center;
+        font-family: "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 20%,0% 90%;
+
+        
+    }
+
+
+    @keyframes fadein{
+        from{
+        opacity: 0;
+        transform: translatey(20px);
+        }
+        to{
+        opacity: 1;
+        transform: translatey(0);
+        }
+    }
+
+
+
+    .hr2 {
+        border-top: 1px dashed #000000; /* 点線 */
+      }
+      
+      hr {
+          padding: 0px 0;
+        }
+
+
+
+.work01{
+    font-size: 30px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    margin: 3% 35.16% 0% 35.16%;
+    border-bottom:solid ;
+}
+
+        /* sinkai*/
+.sinkai{
+    margin: 80px 20px 50px 330px;
+    width: 200px ; 
+    
+}
+.name1{
+    font-size: 50px;
+    margin: 50px 550px 10px 0px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+ 
+    
+}
+.name1_2{
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+   
+ 
+}
+.serif01{
+    text-align: left;
+    margin: 0px 50px 200px 50px;
+
+    width: 100%;
+ 
+}
+
+        /* kiminona*/
+        .kiminonaha{
+            margin: 50px 20px 50px 250px;
+            width: 400px ; 
+
+            
+        }
+        .name2{
+            font-size: 40px;
+            margin: 50px 400px 10px 0px;
+            font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+            color: #5a83ff;
+        
+        }
+        .name2_2{
+            font-size: 20px;
+            margin: 0px 0px 0px 20px;
+            color: #000000;
+            
+        }
+        .serif02{
+            text-align: left;
+            margin: 0px 50px 150px 50px;
+            
+            }
+
+
+
+/* tanaka*/
+            .work02{
+                font-size: 30px;
+                font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+                margin: 50px 450px 0px 450px;
+                border-bottom:solid ;
+            }
+            .tanaka{
+                margin: 50px 70px 50px 250px;
+                width: 250px ; 
+            }
+            .name3{
+                font-size: 50px;
+                margin: 80px 550px 10px 0px;
+                font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+            
+            }
+            .name3_2{
+                font-size: 20px;
+                margin: 0px 0px 0px 20px;
+
+            }
+            .serif03{
+                text-align: left;
+                margin: 0px 250px 130px 450px;
+                }
+
+/* tanji*/
+.work03{
+    font-size: 30px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    margin: 150px 450px 0px 450px;
+    border-bottom:solid ;
+}
+.tanji{
+    margin: 50px 70px 50px 250px;
+    width: 250px ; 
+}
+.name4{
+    font-size: 50px;
+    margin: 80px 550px 10px 0px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+
+}
+.name4_2{
+    font-size: 20px;
+    margin: 0px 0px 0px 20px;
+
+}
+.serif04{
+    text-align: left;
+    margin: 0px 250px 130px 450px;
+    }
+
+
+/* tanji*/
+.work04{
+    font-size: 30px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    margin: 50px 250px 0px 250px;
+    border-bottom:solid ;
+}
+
+.name5{
+    font-size: 50px;
+    margin: 30px 0px 10px 100px;
+    font-family: "ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+
+}
+.name5_2{
+    font-size: 20px;
+    margin: 0px 0px 0px 20px;
+
+}
+.serif05{
+    text-align: left;
+    margin: 0px 230px 130px 230px;
+    }
