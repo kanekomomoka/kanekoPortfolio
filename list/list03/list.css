@@ -6,7 +6,9 @@ main {
   text-align: center;
   margin-top: 3vh;
 }
-
+main img {
+  width: 60%;
+}
 /* Gallery */
 .gallery {
   display: flex;
@@ -89,4 +91,18 @@ section {
 }
 a h1 {
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  main img {
+    width: 100%;
+  }
+  #project-title {
+    font-size: 5vw;
+  }
+
+  a h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
 }
