@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "../../img/portfolioPages/page14.png",
       "../../img/portfolioPages/page15.png",
     ],
-    samplePageLink: "../Gallery/site01/index.html",
+    samplePageLink: "../../Gallery/site02/index.html",
   };
 
   document.getElementById("page-title").textContent = data.pageTitle;
