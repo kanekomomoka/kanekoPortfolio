@@ -111,8 +111,8 @@ section:nth-of-type(1) {
   height: calc(100% - 30%);
 }
 .aboutMe img {
-  height: 300px;
-  width: 200px;
+  width: 15vw;
+  object-fit: cover;
   background-color: #ff9900;
   margin-right: 3vw;
 }
@@ -407,5 +407,13 @@ footer {
   .slider img {
     width: 100vw;
     height: auto;
+  }
+  .gallery-container {
+    display: block;
+  }
+
+  .gallery {
+    width: 100%;
+    margin: 10px 0;
   }
 }
