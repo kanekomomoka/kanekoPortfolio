@@ -396,4 +396,16 @@ footer {
     position: relative;
     padding-left: 20px;
   }
+
+  .listTitle01 {
+    text-align: center;
+    color: #ff9900;
+    font-size: 11vw;
+    margin: 3vh;
+  }
+
+  .slider img {
+    width: 100vw;
+    height: auto;
+  }
 }
