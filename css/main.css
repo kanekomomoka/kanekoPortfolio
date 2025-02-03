@@ -344,6 +344,9 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .Circle {
+    display: none;
+  }
   .sm {
     max-width: 60%;
     position: relative;
