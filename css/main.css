@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   font-family: "Roboto", sans-serif !important;
 }
@@ -75,10 +77,13 @@ main {
   /* margin: 0 auto; */
   margin-left: 30%;
   z-index: 10;
+  -webkit-appearance: none;
 }
 .sm img {
   opacity: 70%;
   width: calc(100% * 4);
+  max-width: 100%;
+  height: auto;
 }
 /* 自己紹介 */
 section:nth-of-type(1) {
