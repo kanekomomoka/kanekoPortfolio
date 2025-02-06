@@ -158,6 +158,7 @@ main ul {
   margin: 0;
 }
 main ul li {
+  max-width: 50%;
   margin-right: -23%;
   list-style: none;
 }
@@ -696,18 +697,16 @@ button {
     height: 80vh;
   }
   /* アニメーション */
-  
 
-.img02 {
-
-  animation-duration: 800ms;
-}
-.img03 {
-  animation-duration: 1200ms;
-}
-.img04 {%;
-  animation-duration: 1600ms;
-}
+  .img02 {
+    animation-duration: 800ms;
+  }
+  .img03 {
+    animation-duration: 1200ms;
+  }
+  .img04 {
+    animation-duration: 1600ms;
+  }
 }
 
 /* スマホ用メディアクエリ */
