@@ -385,6 +385,7 @@ footer {
     overflow: hidden;
     display: flex;
     align-items: center;
+    font-family: sans-serif;
   }
   .aboutMe {
     display: block;
