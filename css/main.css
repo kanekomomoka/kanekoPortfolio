@@ -3,8 +3,8 @@
   padding: 0;
   -webkit-appearance: none;
 }
-.body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
+  font-family: Arial, "Roboto", "Helvetica Neue", Helvetica, sans-serif;
 }
 .slide-container {
   position: absolute;
