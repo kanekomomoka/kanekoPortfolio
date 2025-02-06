@@ -339,6 +339,7 @@ input[name="tab_item"] {
   height: 100%;
 }
 .listTitle01 {
+  background-color: #ffffff;
   text-align: center;
   color: #ff9900;
   font-size: 5vw;
